@@ -5,7 +5,7 @@ Show some stuff?
 {{input type='checkbox' checked=showStuff}}
 
 
-{{#if showStuff}}
+{{#liquid-if showStuff use='to-left' reverse='to-right'}}
   <p>
     Here is some stuff
   </p>
@@ -16,5 +16,5 @@ Show some stuff?
     <li>C</li>
     <li>D</li>
   </ul>
-{{/if}}
+{{/liquid-if}}
 
